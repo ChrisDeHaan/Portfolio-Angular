@@ -1,2 +1,16 @@
-<router-outlet 
-/>
+<header class="flex-container">
+  <div class="header-name">Christopher DeHaan | Web Developer</div>
+  <div class="header-options flex-container">
+    <section class="header-options">Buttons</section>
+  </div>
+</header>
+<main class="flex-container">
+  <aside>Aside from a bunch of other stuff</aside>
+  <section class="main-section">
+    <nav>Navigation</nav>
+    <article>
+      Section with Info
+      <router-outlet />
+    </article>
+  </section>
+</main>

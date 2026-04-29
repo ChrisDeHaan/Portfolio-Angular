@@ -1,0 +1,40 @@
+/// CONTAINER ///
+.flex-container {
+  display: flex;
+}
+
+/// HEADER ///
+header {
+  background: black;
+  color: white;
+
+  >.header-name {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  >.header-options {
+    justify-content: flex-end;
+    flex-grow: 2;
+    background: hotpink;
+
+    >.header-options {
+      background: rgb(241, 132, 187);
+    }
+  }
+}
+
+/// MAIN ///
+main {
+
+
+  >aside {
+    background: grey;
+    flex-grow: 1;
+  }
+
+  >section {
+    background: lightgray;
+    flex-grow: 2;
+  }
+}

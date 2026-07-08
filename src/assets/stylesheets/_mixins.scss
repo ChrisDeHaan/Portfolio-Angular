@@ -1,0 +1,19 @@
+$bg_light-img: url("../img/background-light.png");
+$bg_light-bkg: white;
+$bg_light-txt: black;
+
+$bg_dark-img: url("../img/background-dark.png");
+$bg_dark-bkg: rgb(5, 8, 44);
+$bg_dark-txt: white;
+
+@mixin setLightMode() {
+  --bgImg: #{$bg_light-img};
+  --bgBkg: #{$bg_light-bkg};
+  --bgTxt: #{$bg_light-txt};
+}
+
+@mixin setDarkMode() {
+  --bgImg: #{$bg_dark-img};
+  --bgBkg: #{$bg_dark-bkg};
+  --bgTxt: #{$bg_dark-txt};
+}

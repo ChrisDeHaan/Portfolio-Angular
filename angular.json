@@ -12,6 +12,9 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "@schematics/angular:service": {
+          "type": "service"
         }
       },
       "root": "",
@@ -32,7 +35,9 @@
                 "output": "/assets/i18n/"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/assets/stylesheets/main.scss"
+            ],
             "outputPath": "dist"
           },
           "configurations": {

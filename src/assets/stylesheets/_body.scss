@@ -1,0 +1,20 @@
+@use "./mixins" as *;
+
+body {
+  min-height: 100vh;
+  background-image: var(--bgImg);
+  background-color: var(--bgBkg);
+  background-size: cover;
+  background-position: center;
+  color: var(--bgTxt);
+  margin: 0;
+  padding: 0;
+}
+
+body.lightmode {
+  @include setLightMode();
+}
+
+body.darkmode {
+  @include setDarkMode();
+}

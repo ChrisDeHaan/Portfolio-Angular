@@ -1,13 +1,4 @@
+@use "reset";
 @use "variables";
 @use "mixins";
-@use "body";
-@use "@angular/material" as mat;
-
-html {
-  @include mat.theme(
-    (
-      typography: Ubuntu,
-      density: 0
-    )
-  );
-}
+@use "lightdark";

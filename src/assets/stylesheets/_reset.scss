@@ -1,0 +1,12 @@
+@use "./variables" as *;
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  margin: $space-xs $space-xs;
+}

@@ -6,14 +6,14 @@
 @use "@angular/material" as mat;
 
 html {
-  height: 100%;
+  color-scheme: light dark;
   @include mat.theme(
     (
       color: (
         primary: mat.$magenta-palette,
         tertiary: mat.$violet-palette
       ),
-      typography: Roboto,
+      typography: Ubuntu,
       density: 0
     )
   );

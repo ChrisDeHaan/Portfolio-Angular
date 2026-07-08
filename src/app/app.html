@@ -1,11 +1,2 @@
-<app-header></app-header>
-<main class="flex-container">
-  <aside>{{ "LBL_TEST" | transloco }}</aside>
-  <section class="main-section">
-    <nav>Navigation</nav>
-    <article>
-      Section with Info
-      <router-outlet />
-    </article>
-  </section>
-</main>
+<router-outlet />
+<p>{{ "LBL_HOME" | transloco }}</p>

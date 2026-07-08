@@ -32,7 +32,10 @@
                 "output": "/assets/i18n/"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "src/assets/stylesheets/styles.scss",
+              "src/assets/stylesheets/main.scss"
+            ],
             "outputPath": "dist"
           },
           "configurations": {

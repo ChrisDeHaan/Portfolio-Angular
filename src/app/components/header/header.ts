@@ -1,4 +1,5 @@
-import { Component, DOCUMENT, inject, OnInit } from '@angular/core';
+import { Component, DOCUMENT, inject } from '@angular/core';
+import { ThemeService } from '@app/services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -6,32 +7,11 @@ import { Component, DOCUMENT, inject, OnInit } from '@angular/core';
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
-export class Header implements OnInit {
+export class Header {
   doc = inject(DOCUMENT);
-
-  ngOnInit(): void {
-    const darkModePreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    
-    if (darkModePreference) {
-      this._replaceLightmode();
-    }
-  }
+  themeService = inject(ThemeService);
 
   onClick() {
-    const lightMode = this.doc.body.classList.contains("lightmode");
-    lightMode ? this._replaceLightmode() : this._replaceDarkmode();
-    if (lightMode) {
-      this.doc.body.classList.replace("lightmode", "darkmode");
-    } else {
-      this.doc.body.classList.replace("darkmode", "lightmode");
-    }
-  }
-
-  private _replaceLightmode() {
-    this.doc.body.classList.replace("lightmode", "darkmode");
-  }
-
-  private _replaceDarkmode() {
-      this.doc.body.classList.replace("darkmode", "lightmode");
+    this.themeService.isLightMode ? this.themeService.replaceLightmode() : this.themeService.replaceDarkmode();
   }
 }

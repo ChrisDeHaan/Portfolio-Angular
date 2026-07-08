@@ -4,7 +4,9 @@
   </div>
   <div class="header-options flex-container">
     <section class="">
-      <button type="button" (click)="onClick()">Button</button>
+      <button matButton type="button" (click)="onClick()">
+        <mat-icon  [fontSet]="iconSet.regular" [fontIcon]="isLightMode ? icons.MOON : icons.SUN"></mat-icon>
+      </button>
     </section>
   </div>
 </header>

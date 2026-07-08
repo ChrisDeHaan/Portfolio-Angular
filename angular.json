@@ -36,7 +36,8 @@
               }
             ],
             "styles": [
-              "src/assets/stylesheets/main.scss"
+              "src/assets/stylesheets/main.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
             "outputPath": "dist"
           },

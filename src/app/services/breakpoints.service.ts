@@ -1,7 +1,7 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { computed, DestroyRef, inject, Injectable, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { BREAKPOINTS } from '@app/constants/breakpoints';
+import { BREAKPOINTS } from '@app/constants/breakpoints.constants';
 
 @Injectable({
   providedIn: 'root'

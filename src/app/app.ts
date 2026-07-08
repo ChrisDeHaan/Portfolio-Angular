@@ -1,8 +1,7 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { TranslocoPipe } from '@jsverse/transloco';
-import { ThemeService } from './services/theme.service';
 import { BaseComponent } from './abstracts/base.component';
 
 @Component({
@@ -12,8 +11,6 @@ import { BaseComponent } from './abstracts/base.component';
   styleUrl: './app.scss'
 })
 export class App extends BaseComponent implements OnInit {
-  themeService = inject(ThemeService);
-
   ngOnInit(): void {
     if (this.themeService.isSystemDark) {
       this.themeService.replaceLightmode();

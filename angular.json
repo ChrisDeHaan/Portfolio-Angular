@@ -11,10 +11,19 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "type": "component",
+          "style": "scss",
+          "skipTests": true
         },
         "@schematics/angular:service": {
-          "type": "service"
+          "type": "service",
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
         }
       },
       "root": "",
@@ -35,10 +44,7 @@
                 "output": "/assets/i18n/"
               }
             ],
-            "styles": [
-              "src/assets/stylesheets/main.scss",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-            ],
+            "styles": ["src/assets/stylesheets/main.scss", "node_modules/@fortawesome/fontawesome-free/css/all.min.css"],
             "outputPath": "dist"
           },
           "configurations": {

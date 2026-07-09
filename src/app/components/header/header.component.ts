@@ -9,14 +9,18 @@ import { BaseComponent } from '@app/abstracts/base.component';
     MatButtonModule,
     MatIcon
   ],
-  templateUrl: './header.html',
-  styleUrl: './header.scss'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.scss'
 })
 export class HeaderComponent extends BaseComponent {
   doc = inject(DOCUMENT);
 
-  onClick() {
+  onTheme() {
     this.themeService.isLightMode ? this.themeService.replaceLightmode() : this.themeService.replaceDarkmode();
+  }
+
+  onLanguage() {
+    return;
   }
 
 }

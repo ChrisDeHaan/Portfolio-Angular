@@ -11,7 +11,7 @@ export abstract class BaseComponent {
   isTablet = computed(() => this.breakpointService.isTablet());
   isDesktop = computed(() => this.breakpointService.isDesktop());
 
-  showForm: WritableSignal<boolean> = signal(false);
+  showComponent: WritableSignal<boolean> = signal(false);
 
   get icons() {
     return ICONS;

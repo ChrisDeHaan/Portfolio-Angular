@@ -1,11 +1,15 @@
 <header class="flex-container">
   <div class="header-name">
     <p>Christopher DeHaan</p>
+    <p class="title">Web Developer</p>
   </div>
   <div class="header-options flex-container">
-    <section class="">
-      <button matButton type="button" (click)="onClick()">
-        <mat-icon  [fontSet]="iconSet.regular" [fontIcon]="isLightMode ? icons.MOON : icons.SUN"></mat-icon>
+    <section>
+      <button matButton type="button" (click)="onClick()" aria-label="Language" tabIndex="0">
+        <mat-icon class="custom-icon" [fontSet]="iconSet.solid" [fontIcon]="icons.LANGUAGE"></mat-icon>
+      </button>
+      <button matButton type="button" (click)="onClick()" aria-label="Theme" tabIndex="0">
+        <mat-icon class="custom-icon" [fontSet]="iconSet.solid" [fontIcon]="isLightMode ? icons.SUN : icons.MOON"></mat-icon>
       </button>
     </section>
   </div>

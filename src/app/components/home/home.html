@@ -1,1 +1,12 @@
-<p>home works!</p>
+@if (showComponent()) {
+  <app-header></app-header>
+  <article class="flex-container">
+    <aside>{{ "LBL_TEST" | transloco }}</aside>
+    <section class="main-section">
+      <nav>Navigation</nav>
+      <article>
+        Section with Info
+      </article>
+    </section>
+  </article>
+}

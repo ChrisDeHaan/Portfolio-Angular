@@ -12,7 +12,7 @@ import { BaseComponent } from '@app/abstracts/base.component';
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
-export class Header extends BaseComponent {
+export class HeaderComponent extends BaseComponent {
   doc = inject(DOCUMENT);
 
   onClick() {

@@ -1,7 +1,15 @@
 @use "../../../assets/stylesheets/variables" as *;
+@use "../../../assets/stylesheets//breakpoints" as *;
+@use "../../../assets/stylesheets/mixins" as *;
 
 .flex-container {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include respond-to("medium") {
+    flex-direction: row;
+  }
 }
 
 header {
@@ -9,15 +17,58 @@ header {
 
   >.header-name {
     text-align: center;
-    flex-grow: 1;
+
+    @include respond-to("medium") {
+      flex-grow: 1;
+    }
 
     >p:first-child {
+      font: $font-xl bolder;
+      padding-bottom: $space-sm;
+
+      @include respond-to("medium") {
       font: $font-xxl bolder;
+      }
+    }
+
+    >.title {
+      font: $font-lg bold;
+      padding: $space-md 0;
+      border-top: solid 4px var(--bgTxt);
+      border-radius: $border-radius;
+
+      @include respond-to("medium") {
+      font: $font-xl bolder;
+      }
     }
   }
 
   >.header-options {
-    justify-content: flex-end;
-    flex-grow: 2;
+    justify-content: space-around;
+
+    @include respond-to("medium") {
+      justify-content: flex-end;
+      padding-right: $space-xl;
+      flex-grow: 2;
+    }
+  }
+}
+
+.mat-mdc-button > .mat-icon {
+  margin-right: 0;
+  padding: .75rem;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+
+  @include respond-to("medium") {
+  font-size: 2.25rem;
+  height: 2.25rem;
+  width: 2.25rem;
+  transition-duration: 150ms;
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
   }
 }

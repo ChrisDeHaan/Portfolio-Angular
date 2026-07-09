@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { BaseComponent } from '@app/abstracts/base.component';
-import { HeaderComponent } from '../header/header';
-import { TranslocoPipe } from '@jsverse/transloco';
+import { HeaderComponent } from '../header/header.component';
+import { TabGroupComponent } from '../tab-group/tab-group.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-home',
   imports: [
     HeaderComponent,
-    TranslocoPipe
+    TabGroupComponent,
+    FooterComponent
   ],
-  templateUrl: './home.html',
-  styleUrl: './home.scss'
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent extends BaseComponent implements OnInit {
   ngOnInit(): void {

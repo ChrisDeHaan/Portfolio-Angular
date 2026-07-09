@@ -23,22 +23,24 @@ header {
     }
 
     >p:first-child {
-      font: $font-xl bolder;
+      font-weight: 500;
+      font-size: $font-xl;
       padding-bottom: $space-sm;
 
       @include respond-to("medium") {
-      font: $font-xxl bolder;
+      font-size: $font-xxl;
       }
     }
 
     >.title {
-      font: $font-lg bold;
+      font-weight: 400;
+      font-size: $font-lg;
       padding: $space-md 0;
       border-top: solid 4px var(--bgTxt);
       border-radius: $border-radius;
 
       @include respond-to("medium") {
-      font: $font-xl bolder;
+      font-size: $font-xl
       }
     }
   }

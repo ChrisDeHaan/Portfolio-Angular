@@ -1,7 +1,8 @@
-import { Component, DOCUMENT, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { BaseComponent } from '@app/abstracts/base.component';
+import { TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-header',
@@ -13,14 +14,15 @@ import { BaseComponent } from '@app/abstracts/base.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent extends BaseComponent {
-  doc = inject(DOCUMENT);
+  private _translocoService = inject(TranslocoService);
 
-  onTheme() {
+  onThemeChange() {
     this.themeService.isLightMode ? this.themeService.replaceLightmode() : this.themeService.replaceDarkmode();
   }
 
-  onLanguage() {
-    return;
+  onLanguageChange() {
+    this._translocoService.activeLang() === "en-us" ? this._translocoService.setActiveLang("es-us") : this._translocoService.setActiveLang("en-us");
+    
   }
 
 }

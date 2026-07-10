@@ -4,12 +4,10 @@
   --bgImg: #{$bg_light-img};
   --bgBkg: #{$bg_light-bkg};
   --bgTxt: #{$bg_light-txt};
-  --boxShadow: #{$box_shadow-light};
 }
 
 @mixin setDarkMode() {
   --bgImg: #{$bg_dark-img};
   --bgBkg: #{$bg_dark-bkg};
   --bgTxt: #{$bg_dark-txt};
-  --boxShadow: #{$box_shadow-dark};
 }

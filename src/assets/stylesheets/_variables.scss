@@ -1,9 +1,11 @@
+// SPACING
 $space-xs: 0.25rem;
 $space-sm: .5rem;
 $space-md: 1rem;
 $space-lg: 2rem;
 $space-xl: 3rem;
 
+// FONT SIZE
 $font-xs: 1rem;
 $font-sm: .75rem;
 $font-md: 1rem;
@@ -11,18 +13,17 @@ $font-lg: 1.5rem;
 $font-xl: 2.5rem;
 $font-xxl: 4rem;
 
+// COLORS
 $dark-blue: rgb(5, 8, 44);
-$orange: rgba(217,123,86,.8);
-$pink: rgba(249,93,239,.8);
 
+// BACKGROUND VARIABLES
 $bg_light-img: url("../img/background-light.webp");
 $bg_light-bkg: white;
 $bg_light-txt: $dark-blue;
-$box_shadow-light: $orange;
 
 $bg_dark-img: url("../img/background-dark.webp");
 $bg_dark-bkg: $dark-blue;
 $bg_dark-txt: white;
-$box_shadow-dark: $pink;
 
+// UTILITY
 $border-radius: 5px;

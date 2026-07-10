@@ -1,5 +1,9 @@
 @if (showComponent()) {
   <app-header></app-header>
-  <app-tab-group></app-tab-group>
+  @if (isMobile()) {
+    <app-accordion-group></app-accordion-group>
+  } @else {
+    <app-tab-group></app-tab-group>
+  }
   <app-footer></app-footer>
 }

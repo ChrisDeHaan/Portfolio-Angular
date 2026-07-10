@@ -3,38 +3,54 @@
 @use "../../../assets//stylesheets/mixins" as *;
 
 mat-tab-group {
-  flex-direction: column;
-  padding: $space-sm;
-  margin: $space-xs;
-  background-color: var(--bgBkg);
-  box-shadow: -4px 7px 4px var(--boxShadow);
-  border-radius: 15px;
-  height: 400px;
-
-  @include respond-to("medium") {
-    flex-direction: row;
-  }
-
-}
-
-:host::ng-deep .mat-mdc-tab-labels {
   flex-direction: row;
-  align-items: start;
-
-  @include respond-to("medium") {
-    flex-direction: column;
-  }
+  margin: $space-md;
+  background-color: var(--bgBkg);
+  box-shadow: -4px 4px 1px var(--bgTxt);
+  border-radius: 10px;
+  height: 400px;
 }
 
 :host::ng-deep mat-tab-header {
+  align-items: center;
+
   .mat-mdc-tab-label-container{
     border: none;
+  }
+
+  --mat-tab-animation-duration: #{250ms};
+}
+
+:host::ng-deep .mat-mdc-tab-labels {
+  flex-direction: column;
+  font-size: $font-lg;
+  height: 14rem;
+
+  >div {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid var(--bgTxt);
+    border-right: 2px solid var(--bgTxt);
+
+    &:first-child {
+      border-radius: 0 $border-radius 0 0;
+    }
+
+    &:last-child {
+      border-bottom: 2px solid var(--bgTxt);
+      border-radius: 0 0 $border-radius 0;
+    }
+
+    &.mdc-tab-indicator--active {
+      background-color: rgba(25,60,137,.2);
+    }
   }
 }
 
 mat-icon {
   padding-right: $space-md;
-  font-size: 1.5rem;
-  height: 1.5rem;
-  width: 1.5rem;
+  font-size: $font-lg;
+  height: $font-lg;
+  width: $font-lg;
 }

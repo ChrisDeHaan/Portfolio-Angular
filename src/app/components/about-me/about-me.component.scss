@@ -1,0 +1,37 @@
+@use "import" as *;
+
+main {
+  padding: $space-md;
+}
+
+p {
+  padding: $space-sm $space-md;
+  font-size: $font-mdx;
+}
+
+.title {
+  text-align: center;
+  font-size: $font-xl;
+}
+
+.image-container {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-banner {
+  position: absolute;
+  z-index: 1;
+}
+
+.image-headshot {
+  position: absolute;
+  z-index: 2;
+  border: 3px solid var(--bgTxt);
+  border-radius: $border-radius;
+  box-shadow: 2px 2px 2px var(--bgTxt), -2px 2px 2px var(--bgTxt);
+}

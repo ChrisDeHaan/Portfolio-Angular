@@ -6,7 +6,8 @@ mat-tab-group {
   background-color: var(--bgBkg);
   box-shadow: -4px 4px 1px var(--bgTxt);
   border-radius: 10px;
-  height: 400px;
+
+  min-height: 500px;
 }
 
 :host::ng-deep mat-tab-header {
@@ -23,6 +24,7 @@ mat-tab-group {
   flex-direction: column;
   font-size: $font-lg;
   height: 14rem;
+  width: 222px;
 
   >div {
     justify-content: flex-start;

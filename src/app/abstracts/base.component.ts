@@ -1,5 +1,6 @@
 import { computed, inject, signal, WritableSignal } from "@angular/core";
 import { ICONS, ICONS_SET } from "@app/constants/icons.constants";
+import { ImageUrls } from "@app/constants/strings.constants";
 import { BreakpointService } from "@app/services/breakpoints.service";
 import { ThemeService } from "@app/services/theme.service";
 
@@ -27,5 +28,9 @@ export abstract class BaseComponent {
 
   get isLightMode() {
     return this.themeService.isLightMode;
+  }
+
+  get imageUrls() {
+    return ImageUrls;
   }
 }

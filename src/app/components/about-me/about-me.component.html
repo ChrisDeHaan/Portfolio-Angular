@@ -1,1 +1,11 @@
-<p>about-me works!</p>
+<main>
+  <div class="image-container">
+    <img [src]="isLightMode ? imageUrls.BannerLight : imageUrls.BannerDark"  alt="Banner image of mountains." class="image-banner" />
+    <img [src]="imageUrls.Headshot"  alt="Headshot of Chris." class="image-headshot" />
+  </div>
+  <p>{{ "LBL_ABOUT_ME_1" | transloco }}</p>
+  <p>{{ "LBL_ABOUT_ME_2" | transloco }}</p>
+  <p>{{ "LBL_ABOUT_ME_3" | transloco }}</p>
+  <p>{{ "LBL_ABOUT_ME_4" | transloco }}</p>
+  <p>{{ "LBL_ABOUT_ME_5" | transloco }}</p>
+</main>

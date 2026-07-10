@@ -18,7 +18,7 @@ export abstract class BaseComponent {
   }
 
   get iconSet() {
-    return ICONS_SET;
+    return ICONS_SET.solid;
   }
 
   get isLightMode() {

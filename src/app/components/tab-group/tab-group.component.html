@@ -1,1 +1,25 @@
-<p>tab-group works!</p>
+<mat-tab-group>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon [fontSet]="iconSet" [fontIcon]="icons.BOOK"></mat-icon>
+      <span>{{ "LBL_ABOUT_ME" | transloco }}</span>
+    </ng-template>
+    <app-about-me/>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIGHTBULB"></mat-icon>
+      <span>{{ "LBL_PROJECTS" | transloco }}</span>
+    </ng-template>
+    <app-projects/>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIST"></mat-icon>
+      <span>{{ "LBL_SKILLS" | transloco }}</span>
+    </ng-template>
+    <app-skills/>
+  </mat-tab>
+</mat-tab-group>

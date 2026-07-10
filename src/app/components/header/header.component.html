@@ -6,10 +6,10 @@
   <div class="header-options flex-container">
     <section>
       <button matButton type="button" (click)="onLanguage()" aria-label="Language" tabIndex="0">
-        <mat-icon class="custom-icon" [fontSet]="iconSet.solid" [fontIcon]="icons.LANGUAGE"></mat-icon>
+        <mat-icon class="custom-icon" [fontSet]="iconSet" [fontIcon]="icons.LANGUAGE"></mat-icon>
       </button>
       <button matButton type="button" (click)="onTheme()" aria-label="Theme" tabIndex="0">
-        <mat-icon class="custom-icon" [fontSet]="iconSet.solid" [fontIcon]="isLightMode ? icons.SUN : icons.MOON"></mat-icon>
+        <mat-icon class="custom-icon" [fontSet]="iconSet" [fontIcon]="isLightMode ? icons.SUN : icons.MOON"></mat-icon>
       </button>
     </section>
   </div>

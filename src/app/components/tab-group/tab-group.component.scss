@@ -1,0 +1,40 @@
+@use "../../../assets//stylesheets/variables" as *;
+@use "../../../assets//stylesheets/breakpoints" as *;
+@use "../../../assets//stylesheets/mixins" as *;
+
+mat-tab-group {
+  flex-direction: column;
+  padding: $space-sm;
+  margin: $space-xs;
+  background-color: var(--bgBkg);
+  box-shadow: -4px 7px 4px var(--boxShadow);
+  border-radius: 15px;
+  height: 400px;
+
+  @include respond-to("medium") {
+    flex-direction: row;
+  }
+
+}
+
+:host::ng-deep .mat-mdc-tab-labels {
+  flex-direction: row;
+  align-items: start;
+
+  @include respond-to("medium") {
+    flex-direction: column;
+  }
+}
+
+:host::ng-deep mat-tab-header {
+  .mat-mdc-tab-label-container{
+    border: none;
+  }
+}
+
+mat-icon {
+  padding-right: $space-md;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}

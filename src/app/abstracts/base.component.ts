@@ -21,6 +21,10 @@ export abstract class BaseComponent {
     return ICONS_SET.solid;
   }
 
+  get iconSetBrands() {
+    return ICONS_SET.brands;
+  }
+
   get isLightMode() {
     return this.themeService.isLightMode;
   }

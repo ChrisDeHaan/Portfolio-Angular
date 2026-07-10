@@ -1,15 +1,13 @@
 import { Component, inject } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIcon } from '@angular/material/icon';
 import { BaseComponent } from '@app/abstracts/base.component';
 import { TranslocoService } from '@jsverse/transloco';
+import { ButtonIconComponent } from "../shared/button-icon/button-icon.component";
 
 @Component({
   selector: 'app-header',
   imports: [
-    MatButtonModule,
-    MatIcon
-  ],
+    ButtonIconComponent
+],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

@@ -1,1 +1,16 @@
-<p>footer works!</p>
+<section>
+  <app-button-icon
+    [iconClass]="'custom-icon'"
+    [set]="iconSetBrands"
+    [icon]="icons.LINKEDIN"
+    [ariaLabel]="'LinkedIn'"
+    (clicked)="onLinkedInClicked()"
+  ></app-button-icon>
+  <app-button-icon
+    [iconClass]="'custom-icon'"
+    [set]="iconSetBrands"
+    [icon]="icons.GITHUB"
+    [ariaLabel]="'GitHub'"
+    (clicked)="onGitHubClicked()"
+  ></app-button-icon>
+</section>

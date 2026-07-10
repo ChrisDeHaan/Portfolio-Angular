@@ -1,6 +1,7 @@
 export const ICONS_SET = {
   solid: "fa-solid",
-  regular: "fa-regular"
+  regular: "fa-regular",
+  brands: "fa-brands"
 }
 
 export const ICONS = {
@@ -9,5 +10,9 @@ export const ICONS = {
   LIST: "fa-list-check",
   LANGUAGE: "fa-language",
   MOON: "fa-moon",
-  SUN: "fa-sun"
+  SUN: "fa-sun",
+
+  // Brands
+  LINKEDIN: "fa-square-linkedin",
+  GITHUB: "fa-square-github"
 }

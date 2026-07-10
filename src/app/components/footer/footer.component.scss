@@ -1,0 +1,9 @@
+@use "../../../assets/stylesheets/variables" as *;
+@use "../../../assets/stylesheets/components" as *;
+
+section {
+  display: flex;
+  padding: $space-md 0;
+  align-content: center;
+  justify-content: center;
+}

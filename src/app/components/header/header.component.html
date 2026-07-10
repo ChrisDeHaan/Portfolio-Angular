@@ -5,12 +5,20 @@
   </div>
   <div class="header-options flex-container">
     <section>
-      <button matButton type="button" (click)="onLanguageChange()" aria-label="Language" tabIndex="0">
-        <mat-icon class="custom-icon" [fontSet]="iconSet" [fontIcon]="icons.LANGUAGE"></mat-icon>
-      </button>
-      <button matButton type="button" (click)="onThemeChange()" aria-label="Theme" tabIndex="0">
-        <mat-icon class="custom-icon" [fontSet]="iconSet" [fontIcon]="isLightMode ? icons.SUN : icons.MOON"></mat-icon>
-      </button>
+      <app-button-icon
+        [iconClass]="'custom-icon'"
+        [set]="iconSet"
+        [icon]="icons.LANGUAGE"
+        [ariaLabel]="'Language'"
+        (clicked)="onLanguageChange()"
+      ></app-button-icon>
+      <app-button-icon
+        [iconClass]="'custom-icon'"
+        [set]="iconSet"
+        [icon]="isLightMode ? icons.SUN : icons.MOON"
+        [ariaLabel]="'Theme'"
+        (clicked)="onThemeChange()"
+      ></app-button-icon>
     </section>
   </div>
 </header>

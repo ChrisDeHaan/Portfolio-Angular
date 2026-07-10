@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BaseComponent } from '@app/abstracts/base.component';
-import { AboutMeComponent } from "../about-me/about-me.component";
-import { ProjectsComponent } from "../projects/projects.component";
-import { SkillsComponent } from "../skills/skills.component";
+import { AboutMeComponent } from "@components/about-me/about-me.component";
+import { ProjectsComponent } from "@components/projects/projects.component";
+import { SkillsComponent } from "@components/skills/skills.component";
 import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({

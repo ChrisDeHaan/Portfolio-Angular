@@ -45,6 +45,9 @@
               }
             ],
             "styles": ["src/assets/stylesheets/main.scss", "node_modules/@fortawesome/fontawesome-free/css/all.min.css"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/assets/stylesheets"]
+            },
             "outputPath": "dist"
           },
           "configurations": {

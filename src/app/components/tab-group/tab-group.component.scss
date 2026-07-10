@@ -1,6 +1,4 @@
-@use "../../../assets/stylesheets/variables" as *;
-@use "../../../assets/stylesheets/breakpoints" as *;
-@use "../../../assets/stylesheets/mixins" as *;
+@use "import" as *;
 
 mat-tab-group {
   flex-direction: row;

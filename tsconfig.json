@@ -18,7 +18,6 @@
     "paths": {
       "@app/*": ["src/app/*"],
       "@assets/*": ["src/assets/*"],
-      "@stylesheets/*": ["src/assets/stylesheets/*"],
       "@shared/*": ["src/app/components/shared/*"]
     }
   },

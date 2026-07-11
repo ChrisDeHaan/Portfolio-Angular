@@ -7,6 +7,11 @@ main {
 p {
   padding: $space-sm $space-md;
   font-size: $font-mdx;
+  text-align: start;
+
+  @include respond-to("medium") {
+    text-align: justify;
+  }
 }
 
 .title {

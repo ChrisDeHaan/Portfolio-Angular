@@ -1,32 +1,35 @@
 <main>
   <!-- About Me Panel -->
-  <mat-expansion-panel>
+  <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
-      <mat-panel-title>
-        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.BOOK" class="custom-icon"></mat-icon>
+      <mat-panel-title class="header-container">
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.BOOK" class="panel-icons"></mat-icon>
         <span>{{ "LBL_ABOUT_ME" | transloco }}</span>
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <app-about-me/>
   </mat-expansion-panel>
 
   <!-- Projects Panel -->
-  <mat-expansion-panel>
+  <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIST" class="custom-icon"></mat-icon>
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIST" class="panel-icons"></mat-icon>
         <span>{{ "LBL_PROJECTS" | transloco }}</span>
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <app-projects/>
   </mat-expansion-panel>
 
   <!-- Skills Panel -->
-  <mat-expansion-panel>
+  <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIGHTBULB" class="custom-icon"></mat-icon>
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIGHTBULB" class="panel-icons"></mat-icon>
         <span>{{ "LBL_SKILLS" | transloco }}</span>
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <app-skills/>

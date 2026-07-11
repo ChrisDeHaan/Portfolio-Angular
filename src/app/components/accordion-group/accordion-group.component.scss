@@ -10,14 +10,22 @@ main {
   font-size: $font-lg !important;
   height: $font-lg !important;
   width: $font-lg !important;
+
+  &.caret {
+    padding-right: $space-xl;
+  }
 }
 
 mat-panel-title {
   justify-content: center;
 }
 
-mat-expansion-panel:not(:last-child) {
-  margin-bottom: $space-md;
+mat-expansion-panel {
+  &:not(:last-child) {
+    margin-bottom: $space-md;
+  }
+
+  color: var(--bgTxt);
 }
 
 span {

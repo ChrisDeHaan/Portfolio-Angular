@@ -6,6 +6,7 @@ export const ICONS_SET = {
 
 export const ICONS = {
   BOOK: "fa-book",
+  CARET_DOWN: "fa-caret-down",
   LIGHTBULB: "fa-lightbulb",
   LIST: "fa-list-check",
   LANGUAGE: "fa-language",

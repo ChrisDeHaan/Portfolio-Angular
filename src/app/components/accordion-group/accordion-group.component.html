@@ -1,1 +1,34 @@
-<p>accordion-group works!</p>
+<main>
+  <!-- About Me Panel -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.BOOK" class="custom-icon"></mat-icon>
+        <span>{{ "LBL_ABOUT_ME" | transloco }}</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-about-me/>
+  </mat-expansion-panel>
+
+  <!-- Projects Panel -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIST" class="custom-icon"></mat-icon>
+        <span>{{ "LBL_PROJECTS" | transloco }}</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-projects/>
+  </mat-expansion-panel>
+
+  <!-- Skills Panel -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIGHTBULB" class="custom-icon"></mat-icon>
+        <span>{{ "LBL_SKILLS" | transloco }}</span>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-skills/>
+  </mat-expansion-panel>
+</main>

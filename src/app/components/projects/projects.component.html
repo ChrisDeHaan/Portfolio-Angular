@@ -1,1 +1,34 @@
-<p>projects works!</p>
+<main>
+  <!-- Project 1: Prográmon -->
+  <app-project-cards
+    [title]="'LBL_PROJECT_1_TITLE'"
+    [description]="'LBL_PROJECT_1_DESCR'"
+    [githubLink]="linksUrls.Project_1_GitHub"
+    [deployedLink]="linksUrls.Project_1_Deployed"
+    [projectImage]="imageUrls.Project_1"
+    [altText]="'Project 1. Prográmon Palace.'"
+    animate.enter="fadeIn"
+  ></app-project-cards>
+  
+  <!-- Project 2: Prográmon -->
+  <app-project-cards
+    [title]="'LBL_PROJECT_2_TITLE'"
+    [description]="'LBL_PROJECT_2_DESCR'"
+    [githubLink]="linksUrls.Project_2_GitHub"
+    [deployedLink]="linksUrls.Project_2_Deployed"
+    [projectImage]="imageUrls.Project_2"
+    [altText]="'Project 2. NASA Picture of the Day.'"
+    animate.enter="fadeIn"
+  ></app-project-cards>
+
+  <!-- Project 3: Prográmon -->
+  <app-project-cards
+    [title]="'LBL_PROJECT_3_TITLE'"
+    [description]="'LBL_PROJECT_3_DESCR'"
+    [githubLink]="linksUrls.Project_3_GitHub"
+    [deployedLink]="linksUrls.Project_3_Deployed"
+    [projectImage]="imageUrls.Project_3"
+    [altText]="'Project 3. Harmonius Credit Union.'"
+    animate.enter="fadeIn"
+  ></app-project-cards>
+</main>

@@ -1,0 +1,25 @@
+<section animate.enter="fadeIn" class="card-container">
+  <div class="image-container">
+    <img [src]="projectImage()" [alt]="altText()"/>
+  </div>
+  <div class="text-container">
+    <p class="title">{{ title() | transloco }}</p>
+    <p>{{ description() | transloco }}</p>
+    <div class="button-container">
+      <app-button-icon
+        [iconClass]="'custom-icon'"
+        [set]="iconSetBrands"
+        [icon]="icons.GITHUB"
+        [ariaLabel]="'GitHub'"
+        (clicked)="onGitHubClicked()"
+      ></app-button-icon>
+      <app-button-icon
+        [iconClass]="'custom-icon'"
+        [set]="iconSet"
+        [icon]="icons.EXTERNAL_LINK"
+        [ariaLabel]="'Deployed Link'"
+        (clicked)="onDeployedLinkClicked()"
+      ></app-button-icon>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+@use "import" as *;
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: $space-md 0;
+
+  @include respond-to("medium") {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.image-container {
+  width: 100%;
+
+  >img {
+    border-radius: $border-radius;
+    border: 2px solid var(--bgTxt);
+    box-shadow: -4px 4px 4px var(--bgTxt);
+  }
+}
+
+.text-container {
+  padding: $space-md;
+  text-align: start;
+
+  >.title {
+    font-weight: 400;
+    font-size: $font-lg;
+    text-align: center;
+    padding-bottom: $space-sm;
+
+    @include respond-to("medium") {
+    font-size: $font-xl
+    }
+  }
+
+  @include respond-to("medium") {
+    text-align: justify;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: $space-sm;
+}

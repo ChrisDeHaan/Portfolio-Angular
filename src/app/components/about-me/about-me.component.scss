@@ -1,12 +1,7 @@
 @use "import" as *;
 
-main {
-  padding: $space-md;
-}
-
 p {
   padding: $space-sm $space-md;
-  font-size: $font-mdx;
   text-align: start;
 
   @include respond-to("medium") {

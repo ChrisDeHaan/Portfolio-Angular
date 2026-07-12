@@ -4,7 +4,9 @@
       <mat-icon [fontSet]="iconSet" [fontIcon]="icons.BOOK"></mat-icon>
       <span>{{ "LBL_ABOUT_ME" | transloco }}</span>
     </ng-template>
-    <app-about-me/>
+    <ng-template matTabContent>
+      <app-about-me/>
+    </ng-template>
   </mat-tab>
 
   <mat-tab>
@@ -12,7 +14,9 @@
       <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIGHTBULB"></mat-icon>
       <span>{{ "LBL_PROJECTS" | transloco }}</span>
     </ng-template>
-    <app-projects/>
+    <ng-template matTabContent>
+      <app-projects/>
+    </ng-template>
   </mat-tab>
 
   <mat-tab>
@@ -20,6 +24,8 @@
       <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIST"></mat-icon>
       <span>{{ "LBL_SKILLS" | transloco }}</span>
     </ng-template>
-    <app-skills/>
+    <ng-template matTabContent>
+      <app-skills/>
+    </ng-template>
   </mat-tab>
 </mat-tab-group>

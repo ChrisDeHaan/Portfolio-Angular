@@ -6,6 +6,7 @@ import { AboutMeComponent } from "@components/about-me/about-me.component";
 import { ProjectsComponent } from "@components/projects/projects.component";
 import { SkillsComponent } from "@components/skills/skills.component";
 import { TranslocoPipe } from '@jsverse/transloco';
+import { MatExpansionModule } from "@angular/material/expansion";
 
 @Component({
   selector: 'app-tab-group',
@@ -15,7 +16,8 @@ import { TranslocoPipe } from '@jsverse/transloco';
     AboutMeComponent,
     ProjectsComponent,
     SkillsComponent,
-    TranslocoPipe
+    TranslocoPipe,
+    MatExpansionModule
 ],
   templateUrl: './tab-group.component.html',
   styleUrl: './tab-group.component.scss'

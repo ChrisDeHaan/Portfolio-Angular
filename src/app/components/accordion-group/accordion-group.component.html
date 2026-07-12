@@ -10,7 +10,9 @@
           <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <app-about-me/>
+    <ng-template matExpansionPanelContent>
+      <app-about-me/>
+    </ng-template>
   </mat-expansion-panel>
 
   <!-- Projects Panel -->
@@ -24,7 +26,9 @@
         <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <app-projects/>
+    <ng-template matExpansionPanelContent>
+      <app-projects/>
+    </ng-template>
   </mat-expansion-panel>
 
   <!-- Skills Panel -->
@@ -39,6 +43,8 @@
         <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <app-skills/>
+    <ng-template matExpansionPanelContent>
+      <app-skills/>
+    </ng-template>
   </mat-expansion-panel>
 </main>

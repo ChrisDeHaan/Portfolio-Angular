@@ -1,1 +1,28 @@
-<p>skills works!</p>
+@if (showComponent()) {
+  <main class="skills-container">
+    <section class="proficiencies-container" animate.enter="fadeIn">
+      <p>Front-End Proficiencies</p>
+      <ul>
+        <li>Angular</li>
+        <li>Typescript</li>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>SCSS</li>
+        <li>Tailwind</li>
+        <li>Bootstrap</li>
+        <li>React</li>
+      </ul>
+    </section>
+    <section class="proficiencies-container" animate.enter="fadeIn">
+      <p>Back-End Proficiencies</p>
+      <ul>
+        <li>APIs</li>
+        <li>REST</li>
+        <li>NestJS</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+  </main>
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProjectCardsComponent } from '../project-cards/project-cards.component';
 import { BaseComponent } from '@app/abstracts/base.component';
 
@@ -10,4 +10,8 @@ import { BaseComponent } from '@app/abstracts/base.component';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent extends BaseComponent {}
+export class ProjectsComponent extends BaseComponent implements OnInit{
+  ngOnInit(): void {
+    this.showComponent.set(true);
+  }
+}

@@ -1,0 +1,18 @@
+@use "import" as *;
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include respond-to("medium") {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+  p {
+    font-size: $font-lg;
+  }
+}
+
+.proficiencies-container {
+  padding: $space-md;
+}

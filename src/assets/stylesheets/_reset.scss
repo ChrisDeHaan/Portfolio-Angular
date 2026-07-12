@@ -15,6 +15,9 @@ main {
 
 p {
   margin: $space-xs $space-xs;
+}
+
+p, li {
   font-size: $font-mdx;
 }
 

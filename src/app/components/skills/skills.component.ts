@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BaseComponent } from '@app/abstracts/base.component';
 
 @Component({
   selector: 'app-skills',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
-export class SkillsComponent {}
+export class SkillsComponent extends BaseComponent implements OnInit {
+  ngOnInit(): void {
+    this.showComponent.set(true);
+  }
+}

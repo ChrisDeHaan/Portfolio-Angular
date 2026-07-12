@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BaseComponent } from '@app/abstracts/base.component';
 import { TranslocoPipe } from '@jsverse/transloco';
 
@@ -10,5 +10,8 @@ import { TranslocoPipe } from '@jsverse/transloco';
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
-export class AboutMeComponent extends BaseComponent {
+export class AboutMeComponent extends BaseComponent implements OnInit {
+  ngOnInit(): void {
+    this.showComponent.set(true);
+  }
 }

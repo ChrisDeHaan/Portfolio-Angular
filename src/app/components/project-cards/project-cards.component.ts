@@ -1,8 +1,9 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { BaseComponent } from '@app/abstracts/base.component';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { MatIconModule } from "@angular/material/icon";
 import { ButtonIconComponent } from '../shared/button-icon/button-icon.component';
+import { HrefService } from '@app/services/href.service';
 
 @Component({
   selector: 'app-project-cards',
@@ -15,6 +16,8 @@ import { ButtonIconComponent } from '../shared/button-icon/button-icon.component
   styleUrl: './project-cards.component.scss'
 })
 export class ProjectCardsComponent extends BaseComponent{
+  private _hrefService = inject(HrefService);
+
   title = input.required<string>();
   description = input.required<string>();
   githubLink = input.required<string>();
@@ -23,10 +26,10 @@ export class ProjectCardsComponent extends BaseComponent{
   altText = input.required<string>();
 
   onGitHubClicked() {
-    window.open(this.githubLink(), "_blank");
+    this._hrefService.openWindow(this.githubLink());
   }
   
   onDeployedLinkClicked() {
-    window.open(this.deployedLink(), "_blank");
+    this._hrefService.openWindow(this.deployedLink());
   }
 }

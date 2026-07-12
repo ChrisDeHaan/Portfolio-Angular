@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { BaseComponent } from '@app/abstracts/base.component';
+import { HrefService } from '@app/services/href.service';
 import { ButtonIconComponent } from "@shared/button-icon/button-icon.component";
 
 @Component({
@@ -13,11 +14,13 @@ import { ButtonIconComponent } from "@shared/button-icon/button-icon.component";
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent extends BaseComponent {
+  private _hrefService = inject(HrefService);
+
   onLinkedInClicked() {
-    window.open(this.linksUrls.LinkedIn, "_blank");
+    this._hrefService.openWindow(this.linksUrls.LinkedIn);
   }
 
   onGitHubClicked() {
-    window.open(this.linksUrls.GitHub, "_blank");
+    this._hrefService.openWindow(this.linksUrls.GitHub);
   }
 }

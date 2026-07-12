@@ -43,7 +43,7 @@ mat-tab-group {
     }
 
     &.mdc-tab-indicator--active {
-      background-color: rgba(25,60,137,.2);
+      background-color: $opaque-blue;
     }
   }
 }

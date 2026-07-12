@@ -1,11 +1,13 @@
 <main>
   <!-- About Me Panel -->
-  <mat-expansion-panel hideToggle>
+  <mat-expansion-panel hideToggle [expanded]="true">
     <mat-expansion-panel-header>
-      <mat-panel-title class="header-container">
-        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.BOOK" class="panel-icons"></mat-icon>
-        <span>{{ "LBL_ABOUT_ME" | transloco }}</span>
-        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
+      <mat-panel-title>
+        <div class="header-title">
+          <mat-icon [fontSet]="iconSet" [fontIcon]="icons.BOOK" class="panel-icons"></mat-icon>
+          <span>{{ "LBL_ABOUT_ME" | transloco }}</span>
+        </div>
+          <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>
     <app-about-me/>
@@ -15,8 +17,10 @@
   <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIST" class="panel-icons"></mat-icon>
-        <span>{{ "LBL_PROJECTS" | transloco }}</span>
+        <div class="header-title">
+          <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIST" class="panel-icons"></mat-icon>
+          <span>{{ "LBL_PROJECTS" | transloco }}</span>
+        </div>
         <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>
@@ -27,8 +31,11 @@
   <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIGHTBULB" class="panel-icons"></mat-icon>
-        <span>{{ "LBL_SKILLS" | transloco }}</span>
+        <div class="header-title">
+        
+          <mat-icon [fontSet]="iconSet" [fontIcon]="icons.LIGHTBULB" class="panel-icons"></mat-icon>
+          <span>{{ "LBL_SKILLS" | transloco }}</span>
+        </div>
         <mat-icon [fontSet]="iconSet" [fontIcon]="icons.CARET_DOWN" class="panel-icons caret"></mat-icon>
       </mat-panel-title>
     </mat-expansion-panel-header>

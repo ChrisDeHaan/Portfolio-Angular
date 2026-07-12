@@ -12,11 +12,13 @@ main {
   width: $font-lg !important;
 
   &.caret {
-    padding-right: $space-xl;
+    padding-right: $space-xs;
   }
 }
 
 mat-panel-title {
+  display: grid;
+  grid-template-columns: 1fr auto;
   justify-content: center;
 }
 
@@ -26,8 +28,21 @@ mat-expansion-panel {
   }
 
   color: var(--bgTxt);
+  background-color: var(--bgBkg);
+  border-radius: $border-radius;
+
+  >mat-expansion-panel-header {
+    background-color: $opaque-blue !important;
+    border: 2px solid var(--bgTxt);
+  }
 }
 
 span {
   font-size: $font-lg;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+
 }

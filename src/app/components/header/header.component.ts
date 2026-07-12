@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { BaseComponent } from '@app/abstracts/base.component';
-import { TranslocoService } from '@jsverse/transloco';
+import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
 import { ButtonIconComponent } from "@shared/button-icon/button-icon.component";
 
 @Component({
   selector: 'app-header',
   imports: [
-    ButtonIconComponent
+    ButtonIconComponent,
+    TranslocoPipe
 ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

@@ -5,18 +5,24 @@
   grid-template-columns: 1fr;
   padding: $space-md 0;
 
-  @include respond-to("medium") {
+  @include respond-to("large") {
     grid-template-columns: 1fr 2fr;
   }
 }
 
 .image-container {
   width: 100%;
+  align-content: center;
 
   >img {
     border-radius: $border-radius;
     border: 2px solid var(--bgTxt);
     box-shadow: -4px 4px 4px var(--bgTxt);
+    width: 100%;
+
+    @include respond-to("medium") {
+    min-width: 389px;
+    }
   }
 }
 
@@ -30,12 +36,12 @@
     text-align: center;
     padding-bottom: $space-sm;
 
-    @include respond-to("medium") {
+    @include respond-to("large") {
     font-size: $font-xl
     }
   }
 
-  @include respond-to("medium") {
+  @include respond-to("large") {
     text-align: justify;
   }
 }

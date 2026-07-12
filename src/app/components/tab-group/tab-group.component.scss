@@ -6,11 +6,12 @@ mat-tab-group {
   background-color: var(--bgBkg);
   box-shadow: -4px 4px 1px var(--bgTxt);
   border-radius: 10px;
-  min-height: 922px;
+  min-height: 300px;
 }
 
 :host::ng-deep mat-tab-header {
-  align-items: center;
+  align-items: start;
+  padding-top: $space-sm;
 
   .mat-mdc-tab-label-container{
     border: none;
